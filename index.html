@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DogeQuery</title>
+  <title>DogeQuery Search</title>
   <style>
     body {
       margin: 0;
@@ -13,15 +13,19 @@
       align-items: center;
       background: #f9f9f9;
       font-family: Arial, sans-serif;
-      padding: 15px; /* Prevents content from touching edges */
+      padding: 15px;
       box-sizing: border-box;
     }
     .search-container {
       width: 100%;
-      max-width: 600px; /* Keeps it clean on desktop */
+      max-width: 600px;
       text-align: center;
     }
-    /* Optional: Make the search input box look good on small screens */
+    .search-container img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px; /* space between logo and search */
+    }
     .gsc-input-box, 
     input.gsc-input {
       width: 100% !important;
@@ -32,6 +36,10 @@
 </head>
 <body>
   <div class="search-container">
+    <!-- Logo -->
+    <img src="DogeQuery.png" alt="DogeQuery Logo">
+
+    <!-- Google Custom Search -->
     <script async src="https://cse.google.com/cse.js?cx=6435047bc44ec4e15"></script>
     <div class="gcse-search"></div>
   </div>
